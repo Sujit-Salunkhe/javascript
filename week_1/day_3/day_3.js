@@ -45,10 +45,10 @@
 // }
 // list.forEach(function(element) {
 //     console.log(element)
-//     }).
-list=[4,5,6,4,5,5,]
-for (var i =0;i<list.length;i+=1)
-    console.log(list[i])
-list.forEach(function(element){
-    console.log(element)
-});
+// //     }).
+// list=[4,5,6,4,5,5,]
+// for (var i =0;i<list.length;i+=1)
+//     console.log(list[i])
+// list.forEach(function(element){
+//     console.log(element)
+// });}
