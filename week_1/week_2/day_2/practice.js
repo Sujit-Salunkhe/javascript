@@ -59,26 +59,26 @@
 //     alert( 'Hello' );
 // //   }
 // alert(  3   ||alert(1) || alert(2) || 3 );
-let login=prompt("login with","");
-if (login=="admin"){
-    password=prompt('what is the password',"");
-    if (password=="Themaster"){
-        alert("welcome")
-    }
-    else if (password== ''){
-        alert("Wrong password")
+// let login=prompt("login with","");
+// if (login=="admin"){
+//     password=prompt('what is the password',"");
+//     if (password=="Themaster"){
+//         alert("welcome")
+//     }
+//     else if (password== ''){
+//         alert("Wrong password")
         
-    }
-    else {
-        alert("cancel")
-    }
-}
-else if (login==""){
-    alert("i don't know you")
-}
-else {
-    alert("canceled")
-}
+//     }
+//     else {
+//         alert("cancel")
+//     }
+// }
+// else if (login==""){
+//     alert("i don't know you")
+// }
+// else {
+//     alert("canceled")
+// }
 
 
 
