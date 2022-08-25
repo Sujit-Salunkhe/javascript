@@ -26,9 +26,9 @@
 // ask("why you are here",
 // function()  {alert("you agreed for what purpose");},
 // function(){alert("you cancelled the execution why?, you want to continue.")})
-let ask=function(){
-    alert("this is an function expression")
+// let ask=function(){.
+    // alert("this is an function expression")
 
 
-}
+// }
 // alert(4 && 0);
