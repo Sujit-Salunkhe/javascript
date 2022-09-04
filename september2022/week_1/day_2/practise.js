@@ -16,12 +16,29 @@
 // }
 // User()
 // new User()
-function User(name){
-    this.name=name,
-    this.sayhi= function(){
-    alert("My name is " + this.name)
-    }
+// function User(name){
+//     this.name=name,
+//     this.sayhi= function(){
+//     alert("My name is " + this.name)
+//     }
+
+// }
+// let sujit=new User("sujit")
+// sujit.sayhi()
+let calulater={
+    read(){
+    a=+prompt("Type a First Number",0)
+    b=+prompt("Type a Second Number",0)
+},
+sum(){
+    return a + b
+
+},
+mul(){
+    return a * b
+}
 
 }
-let sujit=new User("sujit")
-sujit.sayhi()
+calulater.read()
+alert(calulater.sum())
+alert(calulater.mul())

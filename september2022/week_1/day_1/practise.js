@@ -36,22 +36,22 @@
 // user.s()    
 // admin.s()   
 // admin["s"]()
-// let calulater={
-//     read(){
-//     a=+prompt("Type a First Number",0)
-//     b=+prompt("Type a Second Number",0)
-// },
-// sum(){
-//     return a + b
+let calulater={
+    read(){
+    a=+prompt("Type a First Number",0)
+    b=+prompt("Type a Second Number",0)
+},
+sum(){
+    return a + b
 
-// },
-// mul(){
-//     return a * b
-// }
+},
+mul(){
+    return a * b
+}
 
-// }
-// calulater.read()
-// alert(calulater.sum())
-// alert(calulater.mul())
+}
+calulater.read()
+alert(calulater.sum())
+alert(calulater.mul())
 
 
