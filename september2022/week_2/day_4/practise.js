@@ -14,5 +14,5 @@
 // alert(typeof x + " " +typeof y);
 // alert(typeof s);
 // alert(s == p);
-let Name="Sujit Yuvraj Salunkhe"
+// let Name="Sujit Yuvraj Salunkhe"
 // alert(Name.substr(0,0);)
