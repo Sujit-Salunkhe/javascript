@@ -33,7 +33,34 @@
 // let sujit="Sujit is the gratest man of the world"
 // if(sujit.indexOf("Sujit") != -1){
 //     alert("We found it")
+// // }
+// alert("Sujit".includes("uj"))
+// // alert("Sujit".startsWith("Su"))
+// // alert("Sujit".endsWith("t"))
+
+// let sujit="sujit"
+// // alert(sujit.toUpperCase())
+// function ucfirst(str){
+//     return str[0].toUpperCase() + str.slice(1,str.length)
 // }
-alert("Sujit".includes("uj"))
-alert("Sujit".startsWith("Su"))
-alert("Sujit".endsWith("t"))
+// // alert(ucfirst(" "))
+
+// alert(ucfirst("sujit"));
+// alert(ucfirst("how can do someone is not liking someone is another part of body time is not for same man what are you doing chutiyapa is 
+// not good for every one")); 
+// function truncate(str,maxlenth){
+//     if (str.length == maxlenth){
+//         return str
+//     }
+//     else if (str.length >= maxlenth){
+//     return str.slice(0,maxlenth - 1) + "..."
+//     }
+//     else if (str.length<= maxlenth){
+//         return str
+//     }
+// }
+// alert(truncate("What is your number man I don't know who are you mother fucker ",20))
+// alert(truncate("What I'd like to tell on this topic is:", 20))
+// //  = "What I'd like to te…"
+// alert(truncate("Hi everyone!", 20)) 
+// // = "Hi everyone!"
