@@ -8,7 +8,7 @@
 // // alert(x === y);
 // let t = new String("John cena");
 // let u = new String("John cena")
-// // alert(x == y);
+// // alert(x == y);m
 // alert(t == u);
 // let fname="Why love is most powerfull in a world why When love is called most powerfull weapoen in a world. I fill it today, Why people are dyed for there love I understand that today I can't say that because I built different so what happend to me really I don't know what happende to me why man it's happed to me man just have coloser look to thah";
 // console.log(fname.indexOf("love"));
@@ -19,4 +19,4 @@
 // alert(firstname + middlenaem + Lastname)
 // let number=12.50;
 // alert(number.toFixed(1))
-// alert()
+// alert()asujit gand mara
