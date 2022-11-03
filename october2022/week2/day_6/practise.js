@@ -17,4 +17,4 @@ let a="45"
 // alert(a.parseInt(a))
 a=Number.parseInt(a)
 alert(a)
-k
+// k
