@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="maincontainer">
+        <div class="inputcontainer">
+            <h3 id="titlehead">TO DO</h3>
+            <input type="text" name="text" id="text" class="box" onkeydown="gotolist(event)" autocomplete="off" />
+        </div>
+    </div>
+    <div id="mytext" class="todoinputs"></div>
+    <div class="completedsection"></div>
+    <div class="complted-clear">
+        <div class="count"></div>
+        <div class="completedtodo">
+            <ul>
+                <li><button class="ALL-list-btn list_btn">All</button></li>
+                <li><button class="Active-list-btn list_btn">Active</button></li>
+                <li><button class="Completed-list-btn list_btn">Completed</button></li>
+            </ul>
+        </div>
+        <div class="clearcompleted">
+            <button class="clearcompleted" id="clearcompleted">
+                clearcompleted
+            </button>
+        </div>
+    </div>
+    <script>
+        let gotolist = (event) => {
+            if (event.keyCode === 13) {
+                event.preventDefault();
+                const textinput = document.getElementById("text");
+                const todoinputs = document.querySelector(".todoinputs");
+                const list_of_inputs = document.getElementsByClassName("count")[0];
+                box_size(todoinputs);
+                if (textinput.value.trim() === "") {
+                    alert("Please write what you want to do");
+                } else {
+                    window.todovalue = textinput.value;
+                    window.inputstore = document.createElement("div");
+                    inputstore.className = "inputlist";
+                    inputstore.textContent = todovalue;
+                    let check_box = document.createElement("input");
+                    check_box.type = "checkbox";
+                    check_box.id = todovalue;
+                    check_box.name = todovalue;
+                    inputstore.prepend(check_box);
+                    let deleteimg = document.createElement("img");
+                    deleteimg.className = "deleteimg";
+                    deleteimg.src = "delete.png";
+                    var deletebtn = document.createElement("button");
+                    deletebtn.appendChild(deleteimg);
+                    inputstore.appendChild(deletebtn);
+                    todoinputs.prepend(inputstore);
+                    textinput.value = "";
+                    count_children(todoinputs, list_of_inputs);
+                    todoinputs.style.display = "block";
+
+                    deletebtn.addEventListener("click", () => {
+                        const deltodo = deletebtn.parentNode;
+                        deltodo.remove();
+                        show_hide(todoinputs);
+                        count_children(todoinputs, list_of_inputs);
+                        box_size(todoinputs);
+                    });
+                }
+            }
+        };
+
+        let show_hide = (showhidetag) => {
+            if (showhidetag.hasChildNodes()) {
+                showhidetag.style.display = "block";
+            } else {
+                showhidetag.style.display = "none";
+            }
+        };
+
+        let count_children = (parent, child) => {
+            const childCount = parent.childElementCount;
+            child.textContent = childCount + " items left";
+        };
+
+        let box_size = (parent) => {
+            const childCount = parent.childElementCount;
+            if (childCount > 6) {
+                parent.style.height = "35vh";
+                parent.style.width = "266px";
+            } else {
+                parent.style.height = "auto";
+                parent.style.width = "auto";
+            }
+        };
+
+        let clearcompleted = document.getElementById("clearcompleted");
+        clearcompleted.addEventListener("click", () => {
+            const completedsection = document.querySelector(".completedsection");
+            const checkboxes = document.querySelectorAll(".inputlist input[type='checkbox']");
+            checkboxes.forEach((checkbox) => {
+                if (checkbox.checked) {
+                    const parent = checkbox.parentNode;
+                    completedsection.appendChild(parent);
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
+

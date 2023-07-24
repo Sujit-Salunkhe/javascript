@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="maincontainer">
+        <div class="container">
+            <div class="inputcontainer">
+                <h3 id="titlehead">TO DO</h3>
+                <input type="text" name="text" id="text" class="box" onkeydown="gotolist(event)" autocomplete="off" />
+            </div>
+
+            <div id="mytext" class="todoinputs"></div>
+            <div class="completedsection"></div>
+            <div class="complted-clear">
+                <section class="count"></section>
+                <section class="completedtodo">
+                    <ul>
+                        <li class="changetype">
+                            <button class="Active-list-btn list_btn" onclick="activeonece()">
+                                Active
+                            </button>
+                        </li>
+                        <li class="changetype">
+                            <button class="Completed-list-btn list_btn" onclick="completedonce()">
+                                Completed
+                            </button>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <button class="clearcompleted" id="clearcompleted">
+                        clearcompleted
+                    </button>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

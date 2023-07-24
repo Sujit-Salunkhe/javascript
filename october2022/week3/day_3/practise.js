@@ -1,0 +1,1 @@
+// alert("Don't waster your time, Sily thing s which is not important in your life")
