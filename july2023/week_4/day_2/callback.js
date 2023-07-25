@@ -16,7 +16,7 @@ function loadScript(src,suj){
         }}
     document.body.append(script)
 }
-let sujit =(error,src)=>{
+let sujit =(error,src)=>{       
     if (error){
           console.log(error)
           return 
