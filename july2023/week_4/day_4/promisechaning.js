@@ -3,7 +3,7 @@
 //         console.log("promise is fullfilled")
 //         resolve(56)
 //     },2000)
-        
+
 // })
 // p.then((value)=>{
 //     console.log(value)
@@ -13,6 +13,7 @@
 //         },2000)
 //     })
 //     return p2
+// console.log("sujit is very good man")
 // }).then((value)=>{
 //     console.log("we are done")
 //     return 2
@@ -27,7 +28,7 @@
 //             document.body.append(script)
 //             script.onload =()=>{ resolve(100 ) }
 //             script.onerror=()=>{reject(0)}
-//     }) 
+//     })
 // }
 // let p1=loadScript("https://code.jquery.com/jquery-3.2.1.slim.min.js")
 // p1.then((value)=>{
@@ -36,3 +37,27 @@
 // }).catch((error)=>{
 //     console.log("Sorry this script is not loaded" + error)
 // })
+
+function fruitItretor(array) {
+  let index = 0;
+  return {
+    next: function () {
+      if (index < array.length) {
+        return {
+          value: array[index++],
+          done: false,
+        };
+      } else {
+        return {
+          done: true,
+        };
+      }
+    },
+  };
+}
+sujit = ["fish", "chicken", "eggs"];
+let fruits = fruitItretor(sujit);
+console.log(fruits.next());
+console.log(fruits.next());
+console.log(fruits.next());
+console.log(fruits.next());
