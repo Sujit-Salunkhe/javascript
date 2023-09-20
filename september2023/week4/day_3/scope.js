@@ -7,7 +7,9 @@ function sayHiBye(firstName, lastName) {
   
     alert( "Hello, " + getFullName() );
     alert( "Bye, " + getFullName() );
-  
   }
 
-sayHiBye(sujit,salunkhe)
+sayHiBye("sujit","salunkhe")
+// console.log("sujit is king")
+{var sujit= "sujitsfd"}
+alert(sujit)
