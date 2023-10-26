@@ -1,41 +1,41 @@
-// let user= {
-//     name:"sujit"
+let user= {
+    name:"sujit"
 
-// };
-//  let admin = user
-//  uset=null
-// alert(admin.name)
-// user.sayhi= ()=>alert("hello")
-// user.sayhi();
-// function sayhi(){
-//     alert("sujit")
-// }
-// user.call=sayhi
-// user.call()
-// let user={
-//     name:"Sujit",
-//     age:18,
-//     sayhi(){
-//         alert(this.name)
-//         alert(this.age)
-//     }
-// }
-// let admin={
-//     name:"Flask"
+};
+ let admin = user
+ uset=null
+alert(admin.name)
+user.sayhi= ()=>alert("hello")
+user.sayhi();
+function sayhi(){
+    alert("sujit")
+}
+user.call=sayhi
+user.call()
+let user={
+    name:"Sujit",
+    age:18,
+    sayhi(){
+        alert(this.name)
+        alert(this.age)
+    }
+}
+let admin1={
+    name:"Flask"
 
-// }
-// let user={
-//     name:"sujit"
-// }
-// let admin={name:"vaishnav"}
-// function nameprint(){
-//     alert(this.name)
-// }
-// user.s=nameprint;
-// admin.s=nameprint;
-// user.s()    
-// admin.s()   
-// admin["s"]()
+}
+let user={
+    name:"sujit"
+}
+let admin2={name:"vaishnav"}
+function nameprint(){
+    alert(this.name)
+}
+user.s=nameprint;
+admin.s=nameprint;
+user.s()    
+admin.s()   
+admin["s"]()
 let calulater={
     read(){
     a=+prompt("Type a First Number",0)

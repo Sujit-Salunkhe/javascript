@@ -13,10 +13,10 @@
 
 // a()
 
-function lextureenvironment(){
+function ksujijdf(){
     console.log(x)
 }
 let x=10
-lextureenvironment()
+ksujijdf()
 
 
