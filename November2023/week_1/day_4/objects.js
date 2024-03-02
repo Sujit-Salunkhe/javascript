@@ -250,54 +250,68 @@
 //     printAnimals.call(animals[i],i)   
 // }
 
-let age = 10;
-var Person = {
-    name:'Piyush',
-    age:20,
-    getAge: () => {
-        console.log(this.age);
-    }
-}
+// let age = 10;
+// var Person = {
+//     name:'Piyush',
+//     age:20,
+//     getAge: () => {
+//         console.log(this.age);
+//     }
+// }
 
-// Person.getAge()
+// // Person.getAge()
 
-Function.prototype.myCall = function (context = {} ,...args){
-    if (typeof this != 'function'){
-        throw new Error (this + " Is Not calleble")
-    }
-    context.fn = this
-    context.fn(...args)
- } 
-Function.prototype.myApply = function (context = {} ,args = []){
-    if (typeof this != 'function'){
-        throw new Error (this + " Is Not calleble")
-    }
-    if (!Array.isArray(args)) {
-        throw new Error ('Plese provide array')
-    }
-    context.fn = this
-    context.fn(...args)
- } 
-Function.prototype.myBind = function (context = {} ,...args){
-    if (typeof this != 'function'){
-        throw new Error (this + " Is Not calleble")
-    }
-    context.fn = this
-    return function (...newArgs) {
-        return context.fn (...args,...newArgs)
-    }
+// Function.prototype.myCall = function (context = {} ,...args){
+//     if (typeof this != 'function'){
+//         throw new Error (this + " Is Not calleble")
+//     }
+//     context.fn = this
+//     context.fn(...args)
+//  } 
+// Function.prototype.myApply = function (context = {} ,args = []){
+//     if (typeof this != 'function'){
+//         throw new Error (this + " Is Not calleble")
+//     }
+//     if (!Array.isArray(args)) {
+//         throw new Error ('Plese provide array')
+//     }
+//     context.fn = this
+//     context.fn(...args)
+//  } 
+// Function.prototype.myBind = function (context = {} ,...args){
+//     if (typeof this != 'function'){
+//         throw new Error (this + " Is Not calleble")
+//     }
+//     context.fn = this
+//     return function (...newArgs) {
+//         return context.fn (...args,...newArgs)
+//     }
 
- } 
-function getName() {
-    console.log(this.name)
-}
-getName.myCall({name:"sujit"})
+//  } 
+// function getName() {
+//     console.log(this.name)
+// }
+// getName.myCall({name:"sujit"})
 
-users = {
+// users = {
 
-    getHold : function () {
-        console.log(this.lname)
-    }
-}
+//     getHold : function () {
+//         console.log(this.lname)
+//     }
+// }
 
-users.getHold({lname : "salunkhe"})
+// users.getHold({lname : "salunkhe"})
+
+// const sub = new Promise((resolve,reject) => {
+//     const result = true
+//     if (result) resolve("subscribe to Whatsapp")
+//     else reject( new Error ('why'))
+// })
+
+// sub.then((res) => {
+//     console.log((res))
+// }).catch(err => {
+//     console.log(err)
+
+// })
+
