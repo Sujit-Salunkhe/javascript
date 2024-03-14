@@ -315,3 +315,129 @@
 
 // })
 
+// const nums= [ 1,2,3,4]
+// nums.reduce((acc,curr,i,arr) => {
+//     return acc + curr;
+// },0)
+
+
+// Array.prototype.myMap = function (cb){
+//     let temp = []
+//     for (let i = 0; i < this.length ;i++){
+//         temp.push(cb(this[i],i,this))
+//     }
+//     return temp
+// }
+
+// Array.prototype.myFilter = function (cb){
+//     let temp = []
+//     for (let i = 0 ;i<this.length;i++){
+//         if (cb(this[i],i,this)) temp.push(this[i])
+//     }
+//     return temp
+// }
+
+// function s (arr) {
+//     let temp = []
+//     arr.forEach(element => {
+//         if (element < 3) temp.push(element)
+//     });
+//     return temp
+
+// }
+
+// Array.prototype.myReduce= function (cb,intialValue){
+// var accumulater = intialValue
+//  for(let i=0;i<this.length;i++){
+//     accumulater  = accumulater ? cb(accumulater,this[i],i,this): this [i]
+//  }
+//  return accumulater
+// }
+// console.log(s([12,2,3,2,1]))
+const students = [
+    { name: "Alice", rollNumber: "001", marks: 50 },
+    { name: "Bob", rollNumber: "002", marks: 20 },
+    { name: "Charlie", rollNumber: "003", marks: 92 },
+    { name: "David", rollNumber: "004", marks: 65 },
+    { name: "Eve", rollNumber: "005", marks: 86 }
+];
+
+// const newStudents = students.filter(value => value.marks < 60).map(value =>({marks:value.marks + 20})).filter(value => value.marks > 60)
+
+
+let squre1 = function squre(num) {
+    return num * num
+}
+function message (){
+    function squre1(num){
+        return num
+    }
+    console.log("The Squre is " + squre1(5))
+
+}
+
+message()
+const fn = (a,x,y,...numbers) => {
+    console.log(a,x,y,numbers[0])
+
+}
+
+fn(12,34,45,1,2,3,3,4)
+
+// const name = "salunkhe"
+var surname ="salunkhe"
+{   
+    console.log(surname)
+    var surname = "mahadik"
+}
+console.log(surname)
+let obj ={
+    name:'sujit',
+    normalfunc :function () {
+        console.log("This is a normal funcition" + " " + this.name)
+    },
+    arrfunc : () => {
+        console.log("This is a arrow function" + " " + this.surname)
+    }
+}
+
+
+obj.normalfunc()
+obj.arrfunc()
+// console.log(newStudents)
+// const students_Name = students.map((val) => {
+//     return (val.name.toUpperCase(
+// })
+
+// const newArray = students.filter(value =>  value.marks > 60 && value.rollNumber > 15)
+// // console.log(newArray)
+
+// const sumOfmarks = students.reduce((acc,curr) => {
+//     return acc + curr.marks;
+// },0)
+
+// const newStudents = students.filter((value) => value.marks > 60).map(value => {
+//     return value.name.toUpperCase()
+// })
+// console.log(newStudents)
+
+// console.log(sumOfmarks)
+// num =9
+// console.log(num)
+
+var num = 21 
+function print (){
+    var num = 20
+    console.log(num)
+}
+
+print()
+
+function createbase(n){
+    return function (num) {
+        return num + n
+    }
+}
+
+let addSix = createbase(6)
+console.log(addSix(7))
