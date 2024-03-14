@@ -315,7 +315,9 @@
 
 // })
 
-// const nums= [ 1,2,3,4]
+// const nums= [ 1,2,3,4]for(let i =0 ;i<this.length;i++){
+
+    
 // nums.reduce((acc,curr,i,arr) => {
 //     return acc + curr;
 // },0)
