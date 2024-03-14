@@ -156,20 +156,35 @@ Array.prototype.myConcat = function (...args){
 // arr.filter(sub => {
 //     return sub < 2
 // })
-Array.prototype.myFilter = function(cb){
-    let new2 = []
-    for(let i=0; i<this.length;i++){
-        const number = cb(this[i])
-        if(number){
-            new2.push(this[i])
-        }
-    }
-    return new2
+// Array.prototype.myFilter = function(cb){
+//     let new2 = []
+//     for(let i=0; i<this.length;i++){
+//         const number = cb(this[i])
+//         if(number){
+//             new2.push(this[i])
+//         }
+//     }
+//     return new2
+// }
+// const newarr = arr.myFilter(rum => {
+//     return rum > 10
+// })
+// console.log(newarr)
+
+
+function myobj (name,lname){
+    this.name = name
+    this.lname = lname
 }
-const newarr = arr.myFilter(rum => {
-    return rum > 10
-})
-console.log(newarr)
+
+myobj.prototype.king = 'hogake'
+
+let sujit = new myobj('naruto','sauke')
+console.log(sujit.name)
+console.log(sujit.king)
+console.log(sujit.__proto__)
+
+
 // arr.myShift()
 // let arr3=[3,4,4]
 // let arr4=[34,2,3]
