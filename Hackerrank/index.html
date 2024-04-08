@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.btns {
+  width: 75%;
+  position: relative;
+}
+
+.btn {
+  width: 30%;
+  height: 48px;
+  font-size: 24px;
+}
+    </style>
+</head>
+<body>
+<div class="btns">
+    <div>
+        <button class="btn" id ="btn1" >1</button>
+        <button class="btn"id ='btn2'>2</button>
+        <button class="btn"id ="btn3">3</button>
+    </div>
+    <div>
+        <button class="btn"  id ="btn4">4</button>
+        <button class="btn" id ='btn5'>5</button>
+        <button class="btn" id ="btn6">6</button>
+    </div>
+    <div>
+        <button class="btn" id ="btn7">7</button>
+        <button class="btn" id ='btn8'>8</button>
+        <button class="btn" id ="btn9">9</button>
+    </div>
+</div>
+</body>
+<script>
+    
+    document.addEventListener('DOMContentLoaded',(e) => {
+        const btn5 = document.getElementById('btn5')
+        btn5.addEventListener('click',(e) => {
+            const btn1 = document.getElementById('btn1')
+            const btn2 = document.getElementById('btn2')
+            const btn3 = document.getElementById('btn3')
+            const btn4 = document.getElementById('btn4')
+            const btn6 = document.getElementById('btn6')
+            const btn7 = document.getElementById('btn7')
+            const btn8 = document.getElementById('btn8')
+            const btn9 = document.getElementById('btn9')
+
+            const btn1value = btn1.innerText
+            const btn2value = btn2.innerText
+            const btn3value = btn3.innerText
+            const btn4value = btn4.innerText
+            const btn6value = btn6.innerText
+            const btn7value = btn7.innerText
+            const btn8value = btn8.innerText
+            const btn9value = btn9.innerText
+
+            btn2.innerText = btn1value
+            btn3.innerText = btn2value
+            btn6.innerText = btn3value
+            btn9.innerText = btn6value
+            btn8.innerText = btn9value
+            btn7.innerText = btn8value
+            btn4.innerText = btn7value
+            btn1.innerText = btn4value
+
+            
+        })
+    })
+</script>
+</html>
